@@ -29,10 +29,12 @@ FOUNDATION_EXPORT const unsigned char NNDCheckInVersionString[];
 
 @interface NNDCheckIn : NSObject
 
-@property(strong, nonatomic) UIButton   *nndCheckInUIButton;
-@property(strong, nonatomic) UIView     *nndCheckInUIView;
-@property(strong, nonatomic) id<id>     *nndCheckInUIButtonCallBackFuntion;
-@property(strong, nonatomic) id<id>     *nndCheckInServices;
+@property (strong, nonatomic) UIButton   *nndCheckInUIButton;
+@property (strong, nonatomic) UIView     *nndCheckInUIView;
+@property (assign, nonatomic) id         nndCheckInUIButtonCallBackFuntion;
+@property (assign, nonatomic) id         nndCheckInServices;
 
+
+- (instancetype) initWithDefaultModel;
 
 @end

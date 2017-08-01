@@ -11,6 +11,8 @@
 		2E0D12FF1F301B1B00EBB567 /* NNDCheckInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D12FE1F301B1B00EBB567 /* NNDCheckInTests.m */; };
 		2E0D13011F301B1B00EBB567 /* NNDCheckIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E0D12F31F301B1B00EBB567 /* NNDCheckIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EEFE5CD1F301D6F007B234D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFE5CC1F301D6F007B234D /* Foundation.framework */; };
+		2EEFE5CF1F301F03007B234D /* NNDCheckIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEFE5CE1F301F03007B234D /* NNDCheckIn.m */; };
+		2EEFE5D11F301F1B007B234D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFE5D01F301F1B007B234D /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		2EEFE5C91F301D3E007B234D /* NNDCheckInServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNDCheckInServices.h; path = Services/NNDCheckInServices.h; sourceTree = "<group>"; };
 		2EEFE5CA1F301D55007B234D /* NNDCheckInBusinessRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNDCheckInBusinessRepository.h; path = BusinessRepository/NNDCheckInBusinessRepository.h; sourceTree = "<group>"; };
 		2EEFE5CC1F301D6F007B234D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EEFE5CE1F301F03007B234D /* NNDCheckIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckIn.m; sourceTree = "<group>"; };
+		2EEFE5D01F301F1B007B234D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEFE5D11F301F1B007B234D /* UIKit.framework in Frameworks */,
 				2EEFE5CD1F301D6F007B234D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +85,7 @@
 				2E0D130B1F301B8900EBB567 /* BusinessRepository */,
 				2E0D130A1F301B7D00EBB567 /* Services */,
 				2E0D12F31F301B1B00EBB567 /* NNDCheckIn.h */,
+				2EEFE5CE1F301F03007B234D /* NNDCheckIn.m */,
 				2E0D12F41F301B1B00EBB567 /* Info.plist */,
 			);
 			path = NNDCheckIn;
@@ -113,6 +119,7 @@
 		2EEFE5CB1F301D6F007B234D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EEFE5D01F301F1B007B234D /* UIKit.framework */,
 				2EEFE5CC1F301D6F007B234D /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEFE5CF1F301F03007B234D /* NNDCheckIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
