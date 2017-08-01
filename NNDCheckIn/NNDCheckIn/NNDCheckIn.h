@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NNDCheckInServices.h"
 
 
 //! Project version number for NNDCheckIn.
@@ -32,9 +33,10 @@ FOUNDATION_EXPORT const unsigned char NNDCheckInVersionString[];
 @property (strong, nonatomic) UIButton   *nndCheckInUIButton;
 @property (strong, nonatomic) UIView     *nndCheckInUIView;
 @property (assign, nonatomic) id         nndCheckInUIButtonCallBackFuntion;
-@property (assign, nonatomic) id         nndCheckInServices;
+@property (assign, nonatomic) id<NNDCheckInServices> nndCheckInServices;
 
 
 - (instancetype) initWithDefaultModel;
+
 
 @end

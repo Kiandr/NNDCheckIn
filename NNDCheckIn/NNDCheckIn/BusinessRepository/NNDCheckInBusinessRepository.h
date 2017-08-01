@@ -11,6 +11,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NNDCheckInServices.h"
+
 
 /*
 
@@ -20,7 +22,9 @@
  */
 
 
-@interface NNDCheckInBusinessRepository : NSObject
+@interface NNDCheckInBusinessRepository : NSObject<NNDCheckInServices>
+
+-(void) NNDCheckInServicesTestProtocolImplementation;
 
 @end
 #endif /* NNDCheckInBusinessRepository_h */

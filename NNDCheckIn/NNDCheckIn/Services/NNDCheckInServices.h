@@ -23,7 +23,7 @@
 
 @protocol NNDCheckInServices <NSObject>
 
-
+-(void) NNDCheckInServicesTestProtocol;
 
 @end
 
