@@ -6,7 +6,9 @@
 //  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 
 //! Project version number for NNDCheckIn.
 FOUNDATION_EXPORT double NNDCheckInVersionNumber;

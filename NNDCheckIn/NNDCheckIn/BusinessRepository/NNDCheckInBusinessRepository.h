@@ -9,5 +9,9 @@
 #ifndef NNDCheckInBusinessRepository_h
 #define NNDCheckInBusinessRepository_h
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+@interface NNDCheckInBusinessRepository : NSObject
 
+@end
 #endif /* NNDCheckInBusinessRepository_h */

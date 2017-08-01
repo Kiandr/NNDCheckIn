@@ -9,5 +9,22 @@
 #ifndef NNDCheckInServices_h
 #define NNDCheckInServices_h
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+/*
+
+ Author:    Kian D.Rad
+ Date:      July 31st 2017
+ ReadMe     This is the services  class. Its just an interface. But becuase the interface is different in Objective C. I build protocol, which are just 
+            decoration functions, and then implement them in the BusinessRepository. 
+ */
+
+
+@protocol NNDCheckInServices <NSObject>
+
+
+
+@end
 
 #endif /* NNDCheckInServices_h */
