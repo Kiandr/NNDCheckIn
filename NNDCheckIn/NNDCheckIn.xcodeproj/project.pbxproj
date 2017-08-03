@@ -7,260 +7,226 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E0D12FA1F301B1B00EBB567 /* NNDCheckIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0D12F01F301B1B00EBB567 /* NNDCheckIn.framework */; };
-		2E0D12FF1F301B1B00EBB567 /* NNDCheckInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D12FE1F301B1B00EBB567 /* NNDCheckInTests.m */; };
-		2E5A4F571F3172C800B0EC2B /* NNDCheckInBusinessRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5A4F501F3172C800B0EC2B /* NNDCheckInBusinessRepository.h */; };
-		2E5A4F581F3172C800B0EC2B /* NNDCheckInBusinessRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A4F511F3172C800B0EC2B /* NNDCheckInBusinessRepository.m */; };
-		2E5A4F591F3172C800B0EC2B /* NNDCheckIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5A4F531F3172C800B0EC2B /* NNDCheckIn.h */; };
-		2E5A4F5A1F3172C800B0EC2B /* NNDCheckIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A4F541F3172C800B0EC2B /* NNDCheckIn.m */; };
-		2E5A4F5B1F3172C800B0EC2B /* NNDCheckInServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5A4F561F3172C800B0EC2B /* NNDCheckInServices.h */; };
-		2EEFE5CD1F301D6F007B234D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFE5CC1F301D6F007B234D /* Foundation.framework */; };
-		2EEFE5D11F301F1B007B234D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFE5D01F301F1B007B234D /* UIKit.framework */; };
+		2E7E2C621F33AD5400972FA7 /* NNDCheckIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C581F33AD5400972FA7 /* NNDCheckIn.framework */; };
+		2E7E2C671F33AD5400972FA7 /* NNDCheckInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C661F33AD5400972FA7 /* NNDCheckInTests.m */; };
+		2E7E2C851F33ADDB00972FA7 /* NNDCheckInBusinessRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7E2C7C1F33ADDB00972FA7 /* NNDCheckInBusinessRepository.h */; };
+		2E7E2C861F33ADDB00972FA7 /* NNDCheckInBusinessRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C7D1F33ADDB00972FA7 /* NNDCheckInBusinessRepository.m */; };
+		2E7E2C871F33ADDB00972FA7 /* NNDCheckInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7E2C7F1F33ADDB00972FA7 /* NNDCheckInController.h */; };
+		2E7E2C881F33ADDB00972FA7 /* NNDCheckInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C801F33ADDB00972FA7 /* NNDCheckInController.m */; };
+		2E7E2C891F33ADDB00972FA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E2C811F33ADDB00972FA7 /* Info.plist */; };
+		2E7E2C8A1F33ADDB00972FA7 /* NNDCheckInService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7E2C831F33ADDB00972FA7 /* NNDCheckInService.h */; };
+		2E7E2C8B1F33ADDB00972FA7 /* NNDCheckInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C841F33ADDB00972FA7 /* NNDCheckInService.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildRule section */
-		2E5A4F5C1F31733E00B0EC2B /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.*";
-			fileType = pattern.proxy;
-			isEditable = 1;
-			outputFiles = (
-				"$(DERIVED_FILE_DIR)/NNDCheckIn",
-			);
-			script = "if [ ! -d ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn ];\nthen\n    mkdir -p ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/\nfi\ncp -R    ~/Documents/git/NNDCheckIn/NNDCheckIn/NNDCheckIn/SourceFiles/     ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/\n\n";
-		};
-/* End PBXBuildRule section */
-
 /* Begin PBXContainerItemProxy section */
-		2E0D12FB1F301B1B00EBB567 /* PBXContainerItemProxy */ = {
+		2E7E2C631F33AD5400972FA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2E0D12E71F301B1B00EBB567 /* Project object */;
+			containerPortal = 2E7E2C4F1F33AD5400972FA7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E0D12EF1F301B1B00EBB567;
+			remoteGlobalIDString = 2E7E2C571F33AD5400972FA7;
 			remoteInfo = NNDCheckIn;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E0D12F01F301B1B00EBB567 /* NNDCheckIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NNDCheckIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E0D12F41F301B1B00EBB567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E0D12F91F301B1B00EBB567 /* NNDCheckInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDCheckInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E0D12FE1F301B1B00EBB567 /* NNDCheckInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInTests.m; sourceTree = "<group>"; };
-		2E0D13001F301B1B00EBB567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E5A4F501F3172C800B0EC2B /* NNDCheckInBusinessRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckInBusinessRepository.h; sourceTree = "<group>"; };
-		2E5A4F511F3172C800B0EC2B /* NNDCheckInBusinessRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInBusinessRepository.m; sourceTree = "<group>"; };
-		2E5A4F531F3172C800B0EC2B /* NNDCheckIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckIn.h; sourceTree = "<group>"; };
-		2E5A4F541F3172C800B0EC2B /* NNDCheckIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckIn.m; sourceTree = "<group>"; };
-		2E5A4F561F3172C800B0EC2B /* NNDCheckInServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckInServices.h; sourceTree = "<group>"; };
-		2EEFE5CC1F301D6F007B234D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2EEFE5D01F301F1B007B234D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E7E2C581F33AD5400972FA7 /* NNDCheckIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NNDCheckIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7E2C611F33AD5400972FA7 /* NNDCheckInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDCheckInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7E2C661F33AD5400972FA7 /* NNDCheckInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInTests.m; sourceTree = "<group>"; };
+		2E7E2C681F33AD5400972FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7E2C7C1F33ADDB00972FA7 /* NNDCheckInBusinessRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckInBusinessRepository.h; sourceTree = "<group>"; };
+		2E7E2C7D1F33ADDB00972FA7 /* NNDCheckInBusinessRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInBusinessRepository.m; sourceTree = "<group>"; };
+		2E7E2C7F1F33ADDB00972FA7 /* NNDCheckInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckInController.h; sourceTree = "<group>"; };
+		2E7E2C801F33ADDB00972FA7 /* NNDCheckInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInController.m; sourceTree = "<group>"; };
+		2E7E2C811F33ADDB00972FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7E2C831F33ADDB00972FA7 /* NNDCheckInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckInService.h; sourceTree = "<group>"; };
+		2E7E2C841F33ADDB00972FA7 /* NNDCheckInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E0D12EC1F301B1B00EBB567 /* Frameworks */ = {
+		2E7E2C541F33AD5400972FA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EEFE5D11F301F1B007B234D /* UIKit.framework in Frameworks */,
-				2EEFE5CD1F301D6F007B234D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E0D12F61F301B1B00EBB567 /* Frameworks */ = {
+		2E7E2C5E1F33AD5400972FA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E0D12FA1F301B1B00EBB567 /* NNDCheckIn.framework in Frameworks */,
+				2E7E2C621F33AD5400972FA7 /* NNDCheckIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E0D12E61F301B1B00EBB567 = {
+		2E7E2C4E1F33AD5400972FA7 = {
 			isa = PBXGroup;
 			children = (
-				2E0D12F21F301B1B00EBB567 /* NNDCheckIn */,
-				2E0D12FD1F301B1B00EBB567 /* NNDCheckInTests */,
-				2E0D12F11F301B1B00EBB567 /* Products */,
-				2EEFE5CB1F301D6F007B234D /* Frameworks */,
+				2E7E2C5A1F33AD5400972FA7 /* NNDCheckIn */,
+				2E7E2C651F33AD5400972FA7 /* NNDCheckInTests */,
+				2E7E2C591F33AD5400972FA7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2E0D12F11F301B1B00EBB567 /* Products */ = {
+		2E7E2C591F33AD5400972FA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E0D12F01F301B1B00EBB567 /* NNDCheckIn.framework */,
-				2E0D12F91F301B1B00EBB567 /* NNDCheckInTests.xctest */,
+				2E7E2C581F33AD5400972FA7 /* NNDCheckIn.framework */,
+				2E7E2C611F33AD5400972FA7 /* NNDCheckInTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E0D12F21F301B1B00EBB567 /* NNDCheckIn */ = {
+		2E7E2C5A1F33AD5400972FA7 /* NNDCheckIn */ = {
 			isa = PBXGroup;
 			children = (
-				2E5A4F4E1F3172C800B0EC2B /* SourceFiles */,
-				2E0D12F41F301B1B00EBB567 /* Info.plist */,
+				2E7E2C7B1F33ADDB00972FA7 /* BusinessRepository */,
+				2E7E2C7E1F33ADDB00972FA7 /* Controllers */,
+				2E7E2C811F33ADDB00972FA7 /* Info.plist */,
+				2E7E2C821F33ADDB00972FA7 /* Services */,
 			);
 			path = NNDCheckIn;
 			sourceTree = "<group>";
 		};
-		2E0D12FD1F301B1B00EBB567 /* NNDCheckInTests */ = {
+		2E7E2C651F33AD5400972FA7 /* NNDCheckInTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E0D12FE1F301B1B00EBB567 /* NNDCheckInTests.m */,
-				2E0D13001F301B1B00EBB567 /* Info.plist */,
+				2E7E2C661F33AD5400972FA7 /* NNDCheckInTests.m */,
+				2E7E2C681F33AD5400972FA7 /* Info.plist */,
 			);
 			path = NNDCheckInTests;
 			sourceTree = "<group>";
 		};
-		2E5A4F4E1F3172C800B0EC2B /* SourceFiles */ = {
+		2E7E2C7B1F33ADDB00972FA7 /* BusinessRepository */ = {
 			isa = PBXGroup;
 			children = (
-				2E5A4F4F1F3172C800B0EC2B /* BusinessRepository */,
-				2E5A4F521F3172C800B0EC2B /* Controllers */,
-				2E5A4F551F3172C800B0EC2B /* Services */,
-			);
-			path = SourceFiles;
-			sourceTree = "<group>";
-		};
-		2E5A4F4F1F3172C800B0EC2B /* BusinessRepository */ = {
-			isa = PBXGroup;
-			children = (
-				2E5A4F501F3172C800B0EC2B /* NNDCheckInBusinessRepository.h */,
-				2E5A4F511F3172C800B0EC2B /* NNDCheckInBusinessRepository.m */,
+				2E7E2C7C1F33ADDB00972FA7 /* NNDCheckInBusinessRepository.h */,
+				2E7E2C7D1F33ADDB00972FA7 /* NNDCheckInBusinessRepository.m */,
 			);
 			path = BusinessRepository;
 			sourceTree = "<group>";
 		};
-		2E5A4F521F3172C800B0EC2B /* Controllers */ = {
+		2E7E2C7E1F33ADDB00972FA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2E5A4F531F3172C800B0EC2B /* NNDCheckIn.h */,
-				2E5A4F541F3172C800B0EC2B /* NNDCheckIn.m */,
+				2E7E2C7F1F33ADDB00972FA7 /* NNDCheckInController.h */,
+				2E7E2C801F33ADDB00972FA7 /* NNDCheckInController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		2E5A4F551F3172C800B0EC2B /* Services */ = {
+		2E7E2C821F33ADDB00972FA7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				2E5A4F561F3172C800B0EC2B /* NNDCheckInServices.h */,
+				2E7E2C831F33ADDB00972FA7 /* NNDCheckInService.h */,
+				2E7E2C841F33ADDB00972FA7 /* NNDCheckInService.m */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		2EEFE5CB1F301D6F007B234D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2EEFE5D01F301F1B007B234D /* UIKit.framework */,
-				2EEFE5CC1F301D6F007B234D /* Foundation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2E0D12ED1F301B1B00EBB567 /* Headers */ = {
+		2E7E2C551F33AD5400972FA7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E5A4F571F3172C800B0EC2B /* NNDCheckInBusinessRepository.h in Headers */,
-				2E5A4F591F3172C800B0EC2B /* NNDCheckIn.h in Headers */,
-				2E5A4F5B1F3172C800B0EC2B /* NNDCheckInServices.h in Headers */,
+				2E7E2C8A1F33ADDB00972FA7 /* NNDCheckInService.h in Headers */,
+				2E7E2C851F33ADDB00972FA7 /* NNDCheckInBusinessRepository.h in Headers */,
+				2E7E2C871F33ADDB00972FA7 /* NNDCheckInController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E0D12EF1F301B1B00EBB567 /* NNDCheckIn */ = {
+		2E7E2C571F33AD5400972FA7 /* NNDCheckIn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E0D13041F301B1B00EBB567 /* Build configuration list for PBXNativeTarget "NNDCheckIn" */;
+			buildConfigurationList = 2E7E2C6C1F33AD5400972FA7 /* Build configuration list for PBXNativeTarget "NNDCheckIn" */;
 			buildPhases = (
-				2E0D12EB1F301B1B00EBB567 /* Sources */,
-				2E0D12EC1F301B1B00EBB567 /* Frameworks */,
-				2E0D12ED1F301B1B00EBB567 /* Headers */,
-				2E0D12EE1F301B1B00EBB567 /* Resources */,
+				2E7E2C531F33AD5400972FA7 /* Sources */,
+				2E7E2C541F33AD5400972FA7 /* Frameworks */,
+				2E7E2C551F33AD5400972FA7 /* Headers */,
+				2E7E2C561F33AD5400972FA7 /* Resources */,
 			);
 			buildRules = (
-				2E5A4F5C1F31733E00B0EC2B /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
 			name = NNDCheckIn;
 			productName = NNDCheckIn;
-			productReference = 2E0D12F01F301B1B00EBB567 /* NNDCheckIn.framework */;
+			productReference = 2E7E2C581F33AD5400972FA7 /* NNDCheckIn.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2E0D12F81F301B1B00EBB567 /* NNDCheckInTests */ = {
+		2E7E2C601F33AD5400972FA7 /* NNDCheckInTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E0D13071F301B1B00EBB567 /* Build configuration list for PBXNativeTarget "NNDCheckInTests" */;
+			buildConfigurationList = 2E7E2C6F1F33AD5400972FA7 /* Build configuration list for PBXNativeTarget "NNDCheckInTests" */;
 			buildPhases = (
-				2E0D12F51F301B1B00EBB567 /* Sources */,
-				2E0D12F61F301B1B00EBB567 /* Frameworks */,
-				2E0D12F71F301B1B00EBB567 /* Resources */,
+				2E7E2C5D1F33AD5400972FA7 /* Sources */,
+				2E7E2C5E1F33AD5400972FA7 /* Frameworks */,
+				2E7E2C5F1F33AD5400972FA7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E0D12FC1F301B1B00EBB567 /* PBXTargetDependency */,
+				2E7E2C641F33AD5400972FA7 /* PBXTargetDependency */,
 			);
 			name = NNDCheckInTests;
 			productName = NNDCheckInTests;
-			productReference = 2E0D12F91F301B1B00EBB567 /* NNDCheckInTests.xctest */;
+			productReference = 2E7E2C611F33AD5400972FA7 /* NNDCheckInTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2E0D12E71F301B1B00EBB567 /* Project object */ = {
+		2E7E2C4F1F33AD5400972FA7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Kian Davoudi-Rad";
 				TargetAttributes = {
-					2E0D12EF1F301B1B00EBB567 = {
+					2E7E2C571F33AD5400972FA7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7Z59E8EDBY;
 						ProvisioningStyle = Automatic;
 					};
-					2E0D12F81F301B1B00EBB567 = {
+					2E7E2C601F33AD5400972FA7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7Z59E8EDBY;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 2E0D12EA1F301B1B00EBB567 /* Build configuration list for PBXProject "NNDCheckIn" */;
+			buildConfigurationList = 2E7E2C521F33AD5400972FA7 /* Build configuration list for PBXProject "NNDCheckIn" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2E0D12E61F301B1B00EBB567;
-			productRefGroup = 2E0D12F11F301B1B00EBB567 /* Products */;
+			mainGroup = 2E7E2C4E1F33AD5400972FA7;
+			productRefGroup = 2E7E2C591F33AD5400972FA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E0D12EF1F301B1B00EBB567 /* NNDCheckIn */,
-				2E0D12F81F301B1B00EBB567 /* NNDCheckInTests */,
+				2E7E2C571F33AD5400972FA7 /* NNDCheckIn */,
+				2E7E2C601F33AD5400972FA7 /* NNDCheckInTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E0D12EE1F301B1B00EBB567 /* Resources */ = {
+		2E7E2C561F33AD5400972FA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7E2C891F33ADDB00972FA7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E0D12F71F301B1B00EBB567 /* Resources */ = {
+		2E7E2C5F1F33AD5400972FA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,35 +236,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E0D12EB1F301B1B00EBB567 /* Sources */ = {
+		2E7E2C531F33AD5400972FA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E5A4F5A1F3172C800B0EC2B /* NNDCheckIn.m in Sources */,
-				2E5A4F581F3172C800B0EC2B /* NNDCheckInBusinessRepository.m in Sources */,
+				2E7E2C8B1F33ADDB00972FA7 /* NNDCheckInService.m in Sources */,
+				2E7E2C881F33ADDB00972FA7 /* NNDCheckInController.m in Sources */,
+				2E7E2C861F33ADDB00972FA7 /* NNDCheckInBusinessRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E0D12F51F301B1B00EBB567 /* Sources */ = {
+		2E7E2C5D1F33AD5400972FA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E0D12FF1F301B1B00EBB567 /* NNDCheckInTests.m in Sources */,
+				2E7E2C671F33AD5400972FA7 /* NNDCheckInTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2E0D12FC1F301B1B00EBB567 /* PBXTargetDependency */ = {
+		2E7E2C641F33AD5400972FA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E0D12EF1F301B1B00EBB567 /* NNDCheckIn */;
-			targetProxy = 2E0D12FB1F301B1B00EBB567 /* PBXContainerItemProxy */;
+			target = 2E7E2C571F33AD5400972FA7 /* NNDCheckIn */;
+			targetProxy = 2E7E2C631F33AD5400972FA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2E0D13021F301B1B00EBB567 /* Debug */ = {
+		2E7E2C6A1F33AD5400972FA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,7 +317,7 @@
 			};
 			name = Debug;
 		};
-		2E0D13031F301B1B00EBB567 /* Release */ = {
+		2E7E2C6B1F33AD5400972FA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -396,7 +363,7 @@
 			};
 			name = Release;
 		};
-		2E0D13051F301B1B00EBB567 /* Debug */ = {
+		2E7E2C6D1F33AD5400972FA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -411,11 +378,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDCheckIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYMROOT = build;
 			};
 			name = Debug;
 		};
-		2E0D13061F301B1B00EBB567 /* Release */ = {
+		2E7E2C6E1F33AD5400972FA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -430,11 +396,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDCheckIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYMROOT = build;
 			};
 			name = Release;
 		};
-		2E0D13081F301B1B00EBB567 /* Debug */ = {
+		2E7E2C701F33AD5400972FA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
@@ -445,7 +410,7 @@
 			};
 			name = Debug;
 		};
-		2E0D13091F301B1B00EBB567 /* Release */ = {
+		2E7E2C711F33AD5400972FA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7Z59E8EDBY;
@@ -459,34 +424,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E0D12EA1F301B1B00EBB567 /* Build configuration list for PBXProject "NNDCheckIn" */ = {
+		2E7E2C521F33AD5400972FA7 /* Build configuration list for PBXProject "NNDCheckIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E0D13021F301B1B00EBB567 /* Debug */,
-				2E0D13031F301B1B00EBB567 /* Release */,
+				2E7E2C6A1F33AD5400972FA7 /* Debug */,
+				2E7E2C6B1F33AD5400972FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E0D13041F301B1B00EBB567 /* Build configuration list for PBXNativeTarget "NNDCheckIn" */ = {
+		2E7E2C6C1F33AD5400972FA7 /* Build configuration list for PBXNativeTarget "NNDCheckIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E0D13051F301B1B00EBB567 /* Debug */,
-				2E0D13061F301B1B00EBB567 /* Release */,
+				2E7E2C6D1F33AD5400972FA7 /* Debug */,
+				2E7E2C6E1F33AD5400972FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		2E0D13071F301B1B00EBB567 /* Build configuration list for PBXNativeTarget "NNDCheckInTests" */ = {
+		2E7E2C6F1F33AD5400972FA7 /* Build configuration list for PBXNativeTarget "NNDCheckInTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E0D13081F301B1B00EBB567 /* Debug */,
-				2E0D13091F301B1B00EBB567 /* Release */,
+				2E7E2C701F33AD5400972FA7 /* Debug */,
+				2E7E2C711F33AD5400972FA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2E0D12E71F301B1B00EBB567 /* Project object */;
+	rootObject = 2E7E2C4F1F33AD5400972FA7 /* Project object */;
 }
