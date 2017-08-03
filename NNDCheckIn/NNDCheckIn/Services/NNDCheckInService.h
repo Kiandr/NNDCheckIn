@@ -5,3 +5,17 @@
  ReadMe:
  */
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+@protocol NNDCheckInServiceProtocolDelegate <NSObject>
+
+
+@end
+
+@interface NNDCheckInService : NSObject<NNDCheckInServiceProtocolDelegate>
+
+@property (strong, nonatomic) id<NNDCheckInServiceProtocolDelegate> delegate;
+
+@end
+

@@ -16,6 +16,9 @@
 		2E7E2C891F33ADDB00972FA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E2C811F33ADDB00972FA7 /* Info.plist */; };
 		2E7E2C8A1F33ADDB00972FA7 /* NNDCheckInService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7E2C831F33ADDB00972FA7 /* NNDCheckInService.h */; };
 		2E7E2C8B1F33ADDB00972FA7 /* NNDCheckInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C841F33ADDB00972FA7 /* NNDCheckInService.m */; };
+		2E7E2C8E1F33B1C100972FA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C8D1F33B1C100972FA7 /* Foundation.framework */; };
+		2E7E2C901F33B1C800972FA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C8F1F33B1C800972FA7 /* UIKit.framework */; };
+		2E7E2C9A1F33CF4F00972FA7 /* NNDCheckInModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C991F33CF4F00972FA7 /* NNDCheckInModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		2E7E2C811F33ADDB00972FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7E2C831F33ADDB00972FA7 /* NNDCheckInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNDCheckInService.h; sourceTree = "<group>"; };
 		2E7E2C841F33ADDB00972FA7 /* NNDCheckInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNDCheckInService.m; sourceTree = "<group>"; };
+		2E7E2C8D1F33B1C100972FA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E7E2C8F1F33B1C800972FA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E7E2C961F33CF0300972FA7 /* NNDCheckInModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNDCheckInModel.h; path = Models/NNDCheckInModel.h; sourceTree = "<group>"; };
+		2E7E2C991F33CF4F00972FA7 /* NNDCheckInModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNDCheckInModel.m; path = Models/NNDCheckInModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7E2C901F33B1C800972FA7 /* UIKit.framework in Frameworks */,
+				2E7E2C8E1F33B1C100972FA7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +76,7 @@
 				2E7E2C5A1F33AD5400972FA7 /* NNDCheckIn */,
 				2E7E2C651F33AD5400972FA7 /* NNDCheckInTests */,
 				2E7E2C591F33AD5400972FA7 /* Products */,
+				2E7E2C8C1F33B1C100972FA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +92,7 @@
 		2E7E2C5A1F33AD5400972FA7 /* NNDCheckIn */ = {
 			isa = PBXGroup;
 			children = (
+				2E7E2C951F33CEB900972FA7 /* Models */,
 				2E7E2C7B1F33ADDB00972FA7 /* BusinessRepository */,
 				2E7E2C7E1F33ADDB00972FA7 /* Controllers */,
 				2E7E2C811F33ADDB00972FA7 /* Info.plist */,
@@ -124,6 +135,24 @@
 				2E7E2C841F33ADDB00972FA7 /* NNDCheckInService.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2E7E2C8C1F33B1C100972FA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E2C8F1F33B1C800972FA7 /* UIKit.framework */,
+				2E7E2C8D1F33B1C100972FA7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E7E2C951F33CEB900972FA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E2C961F33CF0300972FA7 /* NNDCheckInModel.h */,
+				2E7E2C991F33CF4F00972FA7 /* NNDCheckInModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +271,7 @@
 			files = (
 				2E7E2C8B1F33ADDB00972FA7 /* NNDCheckInService.m in Sources */,
 				2E7E2C881F33ADDB00972FA7 /* NNDCheckInController.m in Sources */,
+				2E7E2C9A1F33CF4F00972FA7 /* NNDCheckInModel.m in Sources */,
 				2E7E2C861F33ADDB00972FA7 /* NNDCheckInBusinessRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,3 +6,26 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NNDCheckInController.h"
+
+@implementation NNDCheckInController: NSObject
+
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+
+
+    }
+    return self;
+}
+
+-(void) HelloDepenecyIntegrationNNDCheckInController{
+
+    NSLog(@"-(void) HelloDepenecyIntegrationNNDCheckInController;");
+}
+
+@end
+
+

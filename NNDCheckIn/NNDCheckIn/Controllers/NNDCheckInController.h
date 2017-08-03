@@ -5,7 +5,7 @@
  ReadMe:
  */
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 //! Project version number for NNDCheckIn.
 FOUNDATION_EXPORT double NNDCheckInVersionNumber;
 
@@ -16,6 +16,9 @@ FOUNDATION_EXPORT const unsigned char NNDCheckInVersionString[];
 
 
 @interface NNDCheckInController : NSObject
+
+
+
 
 -(void) HelloDepenecyIntegrationNNDCheckInController;
 
