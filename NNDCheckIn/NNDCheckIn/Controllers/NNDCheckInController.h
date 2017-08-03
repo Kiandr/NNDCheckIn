@@ -6,6 +6,7 @@
  */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <NNDCheckInService.h>
 //! Project version number for NNDCheckIn.
 FOUNDATION_EXPORT double NNDCheckInVersionNumber;
 
@@ -15,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char NNDCheckInVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <NNDCheckIn/PublicHeader.h>
 
 
-@interface NNDCheckInController : NSObject
+@interface NNDCheckInController : NSObject<NNDCheckInServiceProtocolDelegate>
 
 
 
