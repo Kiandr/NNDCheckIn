@@ -18,6 +18,20 @@
 		2EEFE5D11F301F1B007B234D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFE5D01F301F1B007B234D /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		2E5A4F5C1F31733E00B0EC2B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.*";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/NNDCheckIn",
+			);
+			script = "if [ ! -d ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn ];\nthen\n    mkdir -p ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/\nfi\ncp -R    ~/Documents/git/NNDCheckIn/NNDCheckIn/NNDCheckIn/SourceFiles/     ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/\n\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		2E0D12FB1F301B1B00EBB567 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -172,6 +186,7 @@
 				2E0D12EE1F301B1B00EBB567 /* Resources */,
 			);
 			buildRules = (
+				2E5A4F5C1F31733E00B0EC2B /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -396,6 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDCheckIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -414,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDCheckIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 			};
 			name = Release;
 		};

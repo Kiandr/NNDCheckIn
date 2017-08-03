@@ -1,0 +1,120 @@
+diff --git a/NNDCheckIn/.DS_Store b/NNDCheckIn/.DS_Store
+index cb921dc..15423ae 100644
+Binary files a/NNDCheckIn/.DS_Store and b/NNDCheckIn/.DS_Store differ
+diff --git a/NNDCheckIn/NNDCheckIn.xcodeproj/project.pbxproj b/NNDCheckIn/NNDCheckIn.xcodeproj/project.pbxproj
+index 8816bc3..56c4f11 100644
+--- a/NNDCheckIn/NNDCheckIn.xcodeproj/project.pbxproj
++++ b/NNDCheckIn/NNDCheckIn.xcodeproj/project.pbxproj
+@@ -18,6 +18,20 @@
+ 		2EEFE5D11F301F1B007B234D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFE5D01F301F1B007B234D /* UIKit.framework */; };
+ /* End PBXBuildFile section */
+ 
++/* Begin PBXBuildRule section */
++		2E5A4F5C1F31733E00B0EC2B /* PBXBuildRule */ = {
++			isa = PBXBuildRule;
++			compilerSpec = com.apple.compilers.proxy.script;
++			filePatterns = "*.*";
++			fileType = pattern.proxy;
++			isEditable = 1;
++			outputFiles = (
++				"$(DERIVED_FILE_DIR)/myfile",
++			);
++			script = "if [ ! -d ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn ];\nthen\n    mkdir -p ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/\nfi\ncp -R    ~/Documents/git/NNDCheckIn/NNDCheckIn/NNDCheckIn/SourceFiles/     ~/Documents/git/nursenextdoor/nursenextdoor/SubProjects/NNDCheckIn/\n\n";
++		};
++/* End PBXBuildRule section */
++
+ /* Begin PBXContainerItemProxy section */
+ 		2E0D12FB1F301B1B00EBB567 /* PBXContainerItemProxy */ = {
+ 			isa = PBXContainerItemProxy;
+@@ -172,6 +186,7 @@
+ 				2E0D12EE1F301B1B00EBB567 /* Resources */,
+ 			);
+ 			buildRules = (
++				2E5A4F5C1F31733E00B0EC2B /* PBXBuildRule */,
+ 			);
+ 			dependencies = (
+ 			);
+diff --git a/NNDCheckIn/NNDCheckIn/SourceFiles/BusinessRepository/NNDCheckInBusinessRepository.h b/NNDCheckIn/NNDCheckIn/SourceFiles/BusinessRepository/NNDCheckInBusinessRepository.h
+index cabe853..8f603b1 100644
+--- a/NNDCheckIn/NNDCheckIn/SourceFiles/BusinessRepository/NNDCheckInBusinessRepository.h
++++ b/NNDCheckIn/NNDCheckIn/SourceFiles/BusinessRepository/NNDCheckInBusinessRepository.h
+@@ -26,5 +26,6 @@
+ 
+ -(void) NNDCheckInServicesTestProtocolImplementation;
+ 
++
+ @end
+ #endif /* NNDCheckInBusinessRepository_h */
+diff --git a/NNDCheckIn/NNDCheckInTests/Info.plist b/NNDCheckIn/NNDCheckInTests/Info.plist
+deleted file mode 100644
+index 6c6c23c..0000000
+--- a/NNDCheckIn/NNDCheckInTests/Info.plist
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>CFBundleDevelopmentRegion</key>
+-	<string>en</string>
+-	<key>CFBundleExecutable</key>
+-	<string>$(EXECUTABLE_NAME)</string>
+-	<key>CFBundleIdentifier</key>
+-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+-	<key>CFBundleInfoDictionaryVersion</key>
+-	<string>6.0</string>
+-	<key>CFBundleName</key>
+-	<string>$(PRODUCT_NAME)</string>
+-	<key>CFBundlePackageType</key>
+-	<string>BNDL</string>
+-	<key>CFBundleShortVersionString</key>
+-	<string>1.0</string>
+-	<key>CFBundleVersion</key>
+-	<string>1</string>
+-</dict>
+-</plist>
+diff --git a/NNDCheckIn/NNDCheckInTests/NNDCheckInTests.m b/NNDCheckIn/NNDCheckInTests/NNDCheckInTests.m
+deleted file mode 100644
+index df84d2a..0000000
+--- a/NNDCheckIn/NNDCheckInTests/NNDCheckInTests.m
++++ /dev/null
+@@ -1,39 +0,0 @@
+-//
+-//  NNDCheckInTests.m
+-//  NNDCheckInTests
+-//
+-//  Created by Kian Davoudi-Rad on 2017-07-31.
+-//  Copyright © 2017 Kian Davoudi-Rad. All rights reserved.
+-//
+-
+-#import <XCTest/XCTest.h>
+-
+-@interface NNDCheckInTests : XCTestCase
+-
+-@end
+-
+-@implementation NNDCheckInTests
+-
+-- (void)setUp {
+-    [super setUp];
+-    // Put setup code here. This method is called before the invocation of each test method in the class.
+-}
+-
+-- (void)tearDown {
+-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+-    [super tearDown];
+-}
+-
+-- (void)testExample {
+-    // This is an example of a functional test case.
+-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+-}
+-
+-- (void)testPerformanceExample {
+-    // This is an example of a performance test case.
+-    [self measureBlock:^{
+-        // Put the code you want to measure the time of here.
+-    }];
+-}
+-
+-@end

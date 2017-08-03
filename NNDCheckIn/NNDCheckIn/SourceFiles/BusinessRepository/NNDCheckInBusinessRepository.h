@@ -26,5 +26,6 @@
 
 -(void) NNDCheckInServicesTestProtocolImplementation;
 
+
 @end
 #endif /* NNDCheckInBusinessRepository_h */
