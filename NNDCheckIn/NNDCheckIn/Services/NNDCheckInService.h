@@ -17,6 +17,8 @@
 
 @property (strong, nonatomic) id<NNDCheckInServiceProtocolDelegate> delegate;
 
+-(id)nndCheckInUIViewInitializer:(id)model;
+
 @end
 
 

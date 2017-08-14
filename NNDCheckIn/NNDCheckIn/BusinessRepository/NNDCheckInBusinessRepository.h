@@ -6,6 +6,10 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
+@interface NNDCheckInBusinessRepository : NSObject
 
+-(id)nndCheckInUIViewInitializer:(id)model;
 
+@end

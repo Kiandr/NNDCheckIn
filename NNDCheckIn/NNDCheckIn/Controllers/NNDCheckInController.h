@@ -7,6 +7,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <NNDCheckInService.h>
+
+#import "NNDCheckInModel.h"
+
 //! Project version number for NNDCheckIn.
 FOUNDATION_EXPORT double NNDCheckInVersionNumber;
 
@@ -20,7 +23,12 @@ FOUNDATION_EXPORT const unsigned char NNDCheckInVersionString[];
 
 
 
+// TO read more about delegates and protocols:
+// https://www.tutorialspoint.com/objective_c/objective_c_protocols.htm
+@property (strong, nonatomic) id delegate;
 
 -(void) HelloDepenecyIntegrationNNDCheckInController;
+
+
 
 @end

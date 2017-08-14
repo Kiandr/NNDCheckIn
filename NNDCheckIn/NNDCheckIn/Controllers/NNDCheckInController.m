@@ -9,6 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "NNDCheckInController.h"
 
+//NNDCheckInService
+// Extension method add private protected items into it
+@interface NNDCheckInController()
+
+@property(strong, nonatomic)  NNDCheckInService *nndCheckInService;
+@property(assign, nonatomic)  NNDCheckInModel *model;
+
+@end
+
+
 @implementation NNDCheckInController: NSObject
 
 
@@ -20,6 +30,52 @@
     }
     return self;
 }
+
+
+- (instancetype)initWithDataModel {
+    self = [super init];
+    if (self) {
+
+
+        // initWithModel
+        _nndCheckInService =[[NNDCheckInService alloc] init];
+
+        
+
+
+        [_nndCheckInService nndCheckInUIViewInitializer:_model.nndCheckInUIView ];
+
+
+        /*
+         Author: Kian D.Rad
+         Date:   August 3rd 2017
+         ReadMe: Build the View as needed here.
+         TODO: 
+            1- Build UIView, 
+            2- Build button
+            3- 
+         
+         
+         PatiendDataMode  = [[PatiendDataMode alloc] initDataModel];
+         LocationOfUser   = [[LocationOfUser alloc] initWithDataModel];
+         StatusOfVisit    = [[statusOfVisit alloc] initWithDataModel];
+
+         UIView thisView = [UIView alloc]initWith (patientdDataMode, LocationOfUser, StatusOfVisit)];
+         
+
+
+
+         
+         */
+
+
+
+
+    }
+    return self;
+}
+
+
 
 -(void) HelloDepenecyIntegrationNNDCheckInController{
 
