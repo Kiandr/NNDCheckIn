@@ -38,12 +38,12 @@
 
 
         // initWithModel
-        _nndCheckInService =[[NNDCheckInService alloc] init];
+        _nndCheckInService =[[NNDCheckInService alloc] initWithDataModel];
 
         
 
 
-        [_nndCheckInService nndCheckInUIViewInitializer:_model.nndCheckInUIView ];
+        [_nndCheckInService nndCheckInUIViewInitializer:_model ];
 
 
         /*
@@ -53,7 +53,7 @@
          TODO: 
             1- Build UIView, 
             2- Build button
-            3- 
+
          
          
          PatiendDataMode  = [[PatiendDataMode alloc] initDataModel];

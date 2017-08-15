@@ -7,9 +7,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
+#import "NNDCheckInModel.h"
 @interface NNDCheckInBusinessRepository : NSObject
 
--(id)nndCheckInUIViewInitializer:(id)model;
+-(NNDCheckInModel*)nndCheckInUIViewInitializer:(NNDCheckInModel*)model;
 
 @end

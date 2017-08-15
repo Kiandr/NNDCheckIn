@@ -11,7 +11,9 @@
 #import "NNDCheckInBusinessRepository.h"
 
 @interface NNDCheckInService()
+
 @property (strong, nonatomic) NNDCheckInBusinessRepository *repository;
+
 @end
 
 
@@ -39,7 +41,18 @@
 }
 
 
+
 -(id)nndCheckInUIViewInitializer:(id)model{
+    /*
+     Author: Kian D.Rad
+     Date: Auhust 15th 2017
+     README: 
+
+     model  =  UIView
+     return =  UIView
+     
+     */
+
 
 
     @try {

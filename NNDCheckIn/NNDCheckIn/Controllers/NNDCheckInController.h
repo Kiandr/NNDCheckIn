@@ -27,6 +27,9 @@ FOUNDATION_EXPORT const unsigned char NNDCheckInVersionString[];
 // https://www.tutorialspoint.com/objective_c/objective_c_protocols.htm
 @property (strong, nonatomic) id delegate;
 
+
+- (instancetype)initWithDataModel;
+
 -(void) HelloDepenecyIntegrationNNDCheckInController;
 
 
