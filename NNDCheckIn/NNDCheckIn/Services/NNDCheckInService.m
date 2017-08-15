@@ -42,7 +42,7 @@
 
 
 
--(id)nndCheckInUIViewInitializer:(id)model{
+-(NNDCheckInModel*)nndCheckInUIViewInitializer:(NNDCheckInModel*)model{
     /*
      Author: Kian D.Rad
      Date: Auhust 15th 2017

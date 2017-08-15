@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
 
-        _sizes = [[UiViewSizesDatamodel alloc] initDefaultModel];
+        _sizes = [[UiViewSizesDatamodel alloc] initDefaultModelForNNDCheckInProject];
     }
     return self;
 }
@@ -44,7 +44,7 @@
 
     // BUILD THE UIVIEW
     // GO TO DATABASE AND BUILD THE PAITIENT DATA MODEL
-    @try {
+//    @try {
 
         // 1- build the clinet data model, this contians start date, end date, time, and first name and last name
         // 2- build the checkin button, this has a status, on and off, deponds on the exisitng machine time, if already checked in or not
@@ -76,8 +76,12 @@
         // UIView - sliding height button
         model.nndCheckInUIView = [[UIView alloc]initWithFrame:CGRectMake(_sizes.checkInUIViewModelFrameOriginex, _sizes.checkInUIViewModelFrameOriginey, _sizes.checkInUIViewModelFrameSizeWidth, _sizes.checkInUIViewModelFrameSizeHeight)];
 
-        UIView *logoSpace;
-        UIView *ClientDataSpace;
+        UIView *logoSpace = [[UIView alloc]initWithFrame:CGRectMake(_sizes.nndCheckInlogoSpaceFrameOriginex, _sizes.nndCheckInlogoSpaceFrameOriginey, _sizes.nndCheckInlogoSpaceFrameSizeWidth, _sizes.nndCheckInlogoSpaceFrameSizeHeight)];
+        logoSpace.backgroundColor = _sizes.nndCheckInlogoSpaceBackGroundColor;
+
+        UIView *ClientDataSpace = [[UIView alloc]initWithFrame:CGRectMake(_sizes.nndClientDataSpaceFrameOriginex, _sizes.nndClientDataSpaceFrameOriginey, _sizes.nndClientDataSpaceFrameSizeWidth, _sizes.nndClientDataSpaceFrameSizeHeight)];;
+        ClientDataSpace.backgroundColor = _sizes.nndClientDataSpaceBackGroundColor;
+
         UIView *CheckInButtonSpace;
         UIView *StatusSpace;
         UIView *CheckInConfirmationNumberSpace;
@@ -95,18 +99,18 @@
 
         NSLog(@" NNDCheckINUIVIew has been successfully built ");
 
-    }
-    @catch (NSException *exception) {
-
-        NSLog(@"%@", exception.reason);
-    }
-    @finally {
-
-        NSLog(@"FINALLY\n");
-
-        return nil;
-    }
-    
+//    }
+//    @catch (NSException *exception) {
+//
+//        NSLog(@"%@", exception.reason);
+//    }
+//    @finally {
+//
+//        NSLog(@"FINALLY\n");
+//
+//        return nil;
+//    }
+//    
 
     
 

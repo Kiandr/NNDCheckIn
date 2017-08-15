@@ -14,7 +14,7 @@
 @interface NNDCheckInController()
 
 @property(strong, nonatomic)  NNDCheckInService *nndCheckInService;
-@property(assign, nonatomic)  NNDCheckInModel *model;
+@property(strong, nonatomic)  NNDCheckInModel *model;
 
 @end
 
@@ -38,6 +38,8 @@
 
 
         // initWithModel
+
+        _model = [[NNDCheckInModel alloc]init];
         _nndCheckInService =[[NNDCheckInService alloc] initWithDataModel];
 
         
