@@ -61,11 +61,20 @@
          // Do not need this becuase I actually initalize the controller. August 14th 2017 KDR
          //@property (assign, nonatomic) NNDCheckInController* nndCheckInController;
 
+         
+         // CheckInScreen UIVIew
+         _checkInUIViewModelFrameOriginex = _mainPewviewScreenUIViewFrameOriginex;
+         _checkInUIViewModelFrameOriginey = _mainPewviewScreenUIViewFrameOriginey;
+         _checkInUIViewModelFrameSizeHeight = _mainPewviewScreenUIViewFrameSizeHeight;
+         _checkInUIViewModelFrameSizeWidth = _mainPewviewScreenUIViewFrameSizeWidth;
+         _checkIUIViewModelBackGroundColor = [UIColor clearColor];
+
+
          */
 
 
-        // UIView - sliding height button 
-        model.nndCheckInUIView = [[UIView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+        // UIView - sliding height button
+        model.nndCheckInUIView = [[UIView alloc]initWithFrame:CGRectMake(_sizes.checkInUIViewModelFrameOriginex, _sizes.checkInUIViewModelFrameOriginey, _sizes.checkInUIViewModelFrameSizeWidth, _sizes.checkInUIViewModelFrameSizeHeight)];
 
         UIView *logoSpace;
         UIView *ClientDataSpace;
