@@ -44,7 +44,7 @@
 
     // BUILD THE UIVIEW
     // GO TO DATABASE AND BUILD THE PAITIENT DATA MODEL
-//    @try {
+    @try {
 
         // 1- build the clinet data model, this contians start date, end date, time, and first name and last name
         // 2- build the checkin button, this has a status, on and off, deponds on the exisitng machine time, if already checked in or not
@@ -105,18 +105,18 @@
 
         NSLog(@" NNDCheckINUIVIew has been successfully built ");
 
-//    }
-//    @catch (NSException *exception) {
-//
-//        NSLog(@"%@", exception.reason);
-//    }
-//    @finally {
-//
-//        NSLog(@"FINALLY\n");
-//
-//        return nil;
-//    }
-//    
+    }
+    @catch (NSException *exception) {
+
+        NSLog(@"%@", exception.reason);
+    }
+    @finally {
+
+        NSLog(@"FINALLY\n");
+
+        return nil;
+    }
+    
 
     
 
