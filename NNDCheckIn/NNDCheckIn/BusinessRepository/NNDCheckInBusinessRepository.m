@@ -89,9 +89,14 @@
         UIView *CheckInButtonSpace = [[UIView alloc]initWithFrame:CGRectMake(_sizes.checkInButtonUIViewModelFrameOriginex, _sizes.checkInButtonUIViewModelFrameOriginey, _sizes.checkInButtonUIViewModelFrameSizeWidth, _sizes.checkInButtonUIViewModelFrameSizeHeight)];
         CheckInButtonSpace.backgroundColor = _sizes.checkInButtonUIViewModelBackGroundColor;
 
-    UIView *StatusSpace;
+
+
+        UIView *StatusSpace = [[UIView alloc]initWithFrame:CGRectMake(_sizes.nndStatusSpaceFrameOriginex, _sizes.nndStatusSpaceFrameOriginey, _sizes.nndStatusSpaceFrameSizeWidth, _sizes.nndStatusSpaceFrameSizeHeight)];;
+        StatusSpace.backgroundColor = _sizes.nndStatusSpaceBackGroundColor;
+
         UIView *CheckInConfirmationNumberSpace;
         UIView *CheckOutConfirmationNumberSpace;
+
         UIView *ErroStringSpace;
 
 
