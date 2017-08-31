@@ -20,6 +20,8 @@
 		2E7E2C8E1F33B1C100972FA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C8D1F33B1C100972FA7 /* Foundation.framework */; };
 		2E7E2C901F33B1C800972FA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7E2C8F1F33B1C800972FA7 /* UIKit.framework */; };
 		2E7E2C9A1F33CF4F00972FA7 /* NNDCheckInModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E2C991F33CF4F00972FA7 /* NNDCheckInModel.m */; };
+		2EA5AA941F58C6CF00F88FA8 /* NNDDataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA5AA931F58C6CF00F88FA8 /* NNDDataBase.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2EA5AA961F58C6D600F88FA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA5AA951F58C6D600F88FA8 /* CoreData.framework */; };
 		2EE952EE1F4220DF00510770 /* NNDCheckInModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7E2C961F33CF0300972FA7 /* NNDCheckInModel.h */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		2E7E2C8F1F33B1C800972FA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E7E2C961F33CF0300972FA7 /* NNDCheckInModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNDCheckInModel.h; path = Models/NNDCheckInModel.h; sourceTree = "<group>"; };
 		2E7E2C991F33CF4F00972FA7 /* NNDCheckInModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNDCheckInModel.m; path = Models/NNDCheckInModel.m; sourceTree = "<group>"; };
+		2EA5AA931F58C6CF00F88FA8 /* NNDDataBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NNDDataBase.framework; path = "../../NNDDataBase/NNDDataBase/build/Debug-iphoneos/NNDDataBase.framework"; sourceTree = "<group>"; };
+		2EA5AA951F58C6D600F88FA8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2EE952EF1F4225A000510770 /* ClientDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ClientDataModel.h; path = Models/ClientDataModel.h; sourceTree = "<group>"; };
 		2EE952F01F42265A00510770 /* LocationUserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationUserDataModel.h; path = Models/LocationUserDataModel.h; sourceTree = "<group>"; };
 		2EE952F11F42266C00510770 /* LocationClientDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationClientDataModel.h; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA5AA961F58C6D600F88FA8 /* CoreData.framework in Frameworks */,
+				2EA5AA941F58C6CF00F88FA8 /* NNDDataBase.framework in Frameworks */,
 				2E5A543F1F43AE5F000D8C8A /* NNDCommon.framework in Frameworks */,
 				2E7E2C901F33B1C800972FA7 /* UIKit.framework in Frameworks */,
 				2E7E2C8E1F33B1C100972FA7 /* Foundation.framework in Frameworks */,
@@ -149,6 +155,8 @@
 		2E7E2C8C1F33B1C100972FA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EA5AA951F58C6D600F88FA8 /* CoreData.framework */,
+				2EA5AA931F58C6CF00F88FA8 /* NNDDataBase.framework */,
 				2E5A543E1F43AE5F000D8C8A /* NNDCommon.framework */,
 				2E7E2C8F1F33B1C800972FA7 /* UIKit.framework */,
 				2E7E2C8D1F33B1C100972FA7 /* Foundation.framework */,
@@ -357,6 +365,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDDataBase/NNDDataBase\"/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -402,6 +411,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDDataBase/NNDDataBase\"/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -424,7 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDCheckIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon\"/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon\"/** \"~/Documents/git/NNDDataBase/NNDDataBase\"/**";
 			};
 			name = Debug;
 		};
@@ -443,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kdr.NNDCheckIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon\"/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "\"~/Documents/git/NNDCommon/NNDCommon\"/** \"~/Documents/git/NNDDataBase/NNDDataBase\"/**";
 			};
 			name = Release;
 		};

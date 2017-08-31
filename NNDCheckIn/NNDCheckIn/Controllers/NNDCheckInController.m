@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "NNDCheckInController.h"
+#include "NNDDataBaseController.h"
 
 //NNDCheckInService
 // Extension method add private protected items into it
@@ -15,6 +16,7 @@
 
 @property(strong, nonatomic)  NNDCheckInService *nndCheckInService;
 @property(strong, nonatomic)  NNDCheckInModel *model;
+@property(strong, nonatomic) NNDDataBaseController *dataBaseController;
 
 @end
 
@@ -41,12 +43,13 @@
 
         _model = [[NNDCheckInModel alloc]init];
         _nndCheckInService =[[NNDCheckInService alloc] initWithDataModel];
-
+        _dataBaseController = [[NNDDataBaseController alloc] init];
+        
         
 
 
         [_nndCheckInService nndCheckInUIViewInitializer:_model ];
-
+        [ _dataBaseController HelloDataBaseController];
 
         /*
          Author: Kian D.Rad
