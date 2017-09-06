@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NNDCheckInController.h"
 #include "NNDDataBaseController.h"
+#include "NNDPatientDataModel.h"
 
 //NNDCheckInService
 // Extension method add private protected items into it
@@ -50,6 +51,11 @@
 
         [_nndCheckInService nndCheckInUIViewInitializer:_model ];
         [ _dataBaseController HelloDataBaseController];
+        // init data model for Patient DataModel,
+        //NSObject *patientDataModel = [_dataBaseController testGetCheckInDatamodel];
+
+        // [ _dataBaseController PatiendModelData init:WithUserId];
+
 
         /*
          Author: Kian D.Rad
@@ -59,8 +65,6 @@
             1- Build UIView, 
             2- Build button
 
-         
-         
          PatiendDataMode  = [[PatiendDataMode alloc] initDataModel];
          LocationOfUser   = [[LocationOfUser alloc] initWithDataModel];
          StatusOfVisit    = [[statusOfVisit alloc] initWithDataModel];
