@@ -54,7 +54,12 @@
         // init data model for Patient DataModel,
         //NSObject *patientDataModel = [_dataBaseController testGetCheckInDatamodel];
 
-        // [ _dataBaseController PatiendModelData init:WithUserId];
+
+
+        // NSObject patientData = [ _dataBaseController PatiendModelData init:WithUserId];
+        // UIVIew patientView = [ _xxController initPatinetViewWithDataMoel: patientData];
+        // [returnMainView addSubView: patientView];
+
 
 
         /*
